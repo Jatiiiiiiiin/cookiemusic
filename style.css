@@ -97,6 +97,7 @@ header .menu_side .playlist h4:hover span::before:hover {
 
 header .menu_side .playlist h4 .bi {
     display: none;
+    color: #fff;
 
 }
 
