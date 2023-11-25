@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <script src="https://cdn.jsdelivr.net/npm/@weavy/dropin-js@18.0.2/dist/weavy.js" crossorigin="anonymous"></script>
+    <script>
+      // url to your Weavy environment
+      Weavy.url = "https://f78637c84c0049a8b83806620ab48ae1.weavy.io";
+      // token factory that returns the access_token for your demo user
+      Weavy.tokenFactory = async () => "wyu_qNCFnDcbsvV7cVLccbN2o5xp3cF6GO4COkWY";
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -9,62 +18,6 @@
 </head>
 <body>
     <header>
-        <div class="menu_side">
-            <h1>PLAYLIST</h1>
-            <div class="playlist">
-            <h4 class="active"><span></span><i class="bi bi-music-note"></i>playlist</h4>
-            <h4><span></span>last listened</h4>
-            <h4><span></span>recommended</h4>
-            </div>
-        <div class="menu_song">
-            <li class="songItem">
-                <span>01</span>
-                    <img style="display: flex;" src="img/1.jpg" alt="tu hai Kahan">
-                    <h5 style="color: #fff; ">
-                        Tu Hai Kahan
-                           <div class="subtitle">AUR</div>
-                    </h5>
-                    <i style="color: #fff;" class="bi playListPlay bi-play-circle-fill" id="1"></i>
-            </li>
-            <li class="songItem">
-                <span>01</span>
-                    <img style="display: flex;" src="img/1.jpg" alt="tu hai Kahan">
-                    <h5 style="color: #fff; ">
-                        Tu Hai Kahan
-                           <div class="subtitle">AUR</div>
-                    </h5>
-                    <i style="color: #fff;" class="bi playListPlay bi-play-circle-fill" id="2"></i>
-            </li>
-            <li class="songItem">
-                <span>01</span>
-                    <img style="display: flex;" src="img/1.jpg" alt="tu hai Kahan">
-                    <h5 style="color: #fff; ">
-                        Tu Hai Kahan
-                           <div class="subtitle">AUR</div>
-                    </h5>
-                    <i style="color: #fff;" class="bi playListPlay bi-play-circle-fill" id="3"></i>
-            </li>
-
-            <li class="songItem">
-                <span>01</span>
-                    <img style="display: flex;" src="img/1.jpg" alt="tu hai Kahan">
-                    <h5 style="color: #fff; ">
-                        Tu Hai Kahan
-                           <div class="subtitle">AUR</div>
-                    </h5>
-                    <i style="color: #fff;" class="bi playListPlay bi-play-circle-fill" id="4"></i>
-            </li>
-            <li class="songItem">
-                <span>01</span>
-                    <img style="display: flex;" src="img/1.jpg" alt="tu hai Kahan">
-                    <h5 style="color: #fff; ">
-                        Tu Hai Kahan
-                           <div class="subtitle">AUR</div>
-                    </h5>
-                    <i style="color: #fff;" class="bi playListPlay bi-play-circle-fill" id="5"></i>
-            </li>
-    </div>
-    </div>
         <div class="song_side">
             <nav>
                 <div class="search">
@@ -238,28 +191,28 @@
                     </div>
                 </div>
                 <div class="item">
-                    <li>
+                    <li class="popup">
                         <img src="atif.jpg" alt="lightswitch">
                     </li>
-                    <li>
+                    <li class="popup">
                         <img src="jubin Nautiyal.jpg" alt="lightswitch">
                     </li>
-                    <li>
+                    <li class="popup">
                         <img src="arjit.jpg" alt="lightswitch">
                     </li>
-                    <li>
+                    <li class="popup">
                         <img src="honey.jpg" alt="lightswitch">
                     </li>
-                    <li>
+                    <li class="popup">
                         <img src="Diljit_Dosanjh.jpg" alt="lightswitch">
                     </li>
-                    <li>
+                    <li class="popup">
                         <img src="neha.jpg" alt="lightswitch">
                     </li>
-                    <li>
+                    <li class="popup">
                         <img src="guru.jpg" alt="lightswitch">
                     </li>
-                    <li>
+                    <li class="popup">
                         <img src="akhil.jpg" alt="lightswitch">
                     </li>
                 
@@ -268,6 +221,64 @@
             </div>
         </div>
 
+        <div class="menu_side">
+            <h1>COOKIE MUSIC</h1>
+            <div class="playlist">
+            <h4 class="active"><span></span><i class="bi bi-music-note"></i>playlist</h4>
+            <h4><span></span>last listened</h4>
+            <h4><span></span>recommended</h4>
+            </div>
+        <div class="menu_song">
+            <li class="songItem">
+                <span>01</span>
+                    <img style="display: flex;" src="img/4.jpg" alt="tu hai Kahan">
+                    <h5 style="color: #fff; ">
+                        Tu Hai Kahan
+                           <div class="subtitle">AUR</div>
+                    </h5>
+                    <i style="color: #fff;" class="bi playListPlay bi-play-circle-fill" id="1"></i>
+            </li>
+            <li class="songItem">
+                <span>02</span>
+                    <img style="display: flex;" src="img/1.jpg" alt="tu hai Kahan">
+                    <h5 style="color: #fff; ">
+                        Tu Hai Kahan
+                           <div class="subtitle">AUR</div>
+                    </h5>
+                    <i style="color: #fff;" class="bi playListPlay bi-play-circle-fill" id="2"></i>
+            </li>
+            <li class="songItem">
+                <span>03</span>
+                    <img style="display: flex;" src="img/1.jpg" alt="tu hai Kahan">
+                    <h5 style="color: #fff; ">
+                        Tu Hai Kahan
+                           <div class="subtitle">AUR</div>
+                    </h5>
+                    <i style="color: #fff;" class="bi playListPlay bi-play-circle-fill" id="3"></i>
+            </li>
+
+            <li class="songItem">
+                <span>04</span>
+                    <img style="display: flex;" src="img/1.jpg" alt="tu hai Kahan">
+                    <h5 style="color: #fff; ">
+                        Tu Hai Kahan
+                           <div class="subtitle">AUR</div>
+                    </h5>
+                    <i style="color: #fff;" class="bi playListPlay bi-play-circle-fill" id="4"></i>
+            </li>
+            <li class="songItem">
+                <span>05</span>
+                    <img style="display: flex;" src="img/1.jpg" alt="tu hai Kahan">
+                    <h5 style="color: #fff; ">
+                        Tu Hai Kahan
+                           <div class="subtitle">AUR</div>
+                    </h5>
+                    <i style="color: #fff;" class="bi playListPlay bi-play-circle-fill" id="5"></i>
+            </li>
+    </div>
+    </div>
+        
+
         
         <div class="master_play">
             <div class="wave">
@@ -275,23 +286,23 @@
                 <div class="wave1"></div>
                 <div class="wave1"></div>
             </div>
-            <img src="img/2.jpg" alt="alan" id="poster_master_play">
-            <h5 class="" style="color: #fff; ">
-                ON MAY WAY
-                <div class="subtitle">Alan Walker</div>
+            <img src="dafa4066.jpg" alt="alan" id="poster_master_play">
+            <h5 id="title" style="color: #fff; ">
+                DAFA 406
+                <div class="subtitle">chotu shikari</div>
             </h5>
             <div class="icon">
                 <i class="bi bi-skip-start-fill" id="back"></i>
                 <i class="bi bi-play-fill" id="masterPlay"></i>
                 <i class="bi bi-skip-end-fill" id="next"></i>
             </div>
-            <span id="currentstart">0:00</span>
+            <span id="currentStart">0:00</span>
             <div class="bar">
                 <input type="range" id="seek" min="0" value="0" max="100">
                 <div class="bar2" id="bar2"></div>
                 <div class="dot"></div>
             </div>
-            <span id="currentendt">0:00</span>
+            <span id="currentEnd">0:00</span>
             <div class="user">
                 <h5>USER PROFILE
                 <div class="subtitle">account
@@ -300,8 +311,14 @@
             </div>
             
         </div>
+        <div id="files-container" style="height:600px;"></div>
         
     </header>
     <script src="script.js"></script>
+    <script>
+        const files = new Files({ uid: "demofiles" });
+        document.getElementById("files-container").append(files);
+    </script>
+    
 </body>
 </html>
