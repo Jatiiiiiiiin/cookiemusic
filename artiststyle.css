@@ -25,7 +25,7 @@ header {
     overflow: hidden;
 }
 
-header .menu_side, .song_side {
+header .menu_side, .artist {
     position: relative;
     width: 25%;
     height: 90%;
@@ -34,7 +34,7 @@ header .menu_side, .song_side {
 
 }
 
-header .song_side {
+header .artist{
     width: 75%;
     background: #000000;
 }
@@ -119,6 +119,11 @@ header .menu_side .menu_song {
     width: 100%;
     height: 400px;
     margin-top: 40px;
+    overflow: auto;
+}
+
+header .menu_side .menu_song::-webkit-scrollbar {
+    display: none;
 }
 
 header .menu_side .menu_song li{
@@ -327,20 +332,19 @@ opacity: 0;
 
 }
 
-header .song_side {
+header .artist {
     z-index: 2;
 }
 
-header .song_side::before{
+header .artist::before{
     content: '';
     position: absolute;
     width: 100%;
     height: 300px;
-    background: url(Untitled\ Project.jpg);
     z-index: -1;
 }
 
-header .song_side nav{
+header .artist nav{
     width: 90%;
     height: 10%;
     text-decoration: none;
@@ -350,11 +354,11 @@ header .song_side nav{
     justify-content: space-between;
 }
 
-header .song_side nav ul {
+header .artist nav ul {
     display: flex;
 }
 
-header .song_side nav ul li{
+header .artist nav ul li{
     display: flex;
     position: relative;
     list-style-type: none;
@@ -366,15 +370,15 @@ header .song_side nav ul li{
 }
 
 
-header .song_side nav ul li:hover{
+header .artist nav ul li:hover{
     color: #ffffff;
 }
 
-header .song_side nav ul li:nth-child(1){
+header .artist nav ul li:nth-child(1){
     color: #ffffff;
 }
 
-header .song_side nav .search{
+header .artist nav .search{
     position: relative;
     width:30%;
     padding: 1px 10px;
@@ -382,7 +386,7 @@ header .song_side nav .search{
     color: grey;
 }
 
-header .song_side nav .search::before{
+header .artist nav .search::before{
     position: absolute;
     content: '';
     width: 100%;
@@ -393,12 +397,12 @@ header .song_side nav .search::before{
     z-index: -1;
 }
 
-header .song_side nav .search .bi{
+header .artist nav .search .bi{
     font-size: 15px;
     padding: 3px 0px 0px 10px;
 }
 
-header .song_side nav .search input{
+header .artist nav .search input{
     background: none;
     outline: none;
     border: none;
@@ -634,3 +638,89 @@ header .song_side .popular_artist .item li img{
     border-radius: 10%;
 }
 
+header .artist .show {
+    height: 35%;
+    width: 95%;
+    justify-content: first baseline;
+    margin: 0px 0px 0px 10px;
+    display: flex;
+    background-image: linear-gradient(to right top, #ffffff, #cacaca, #979797, #676767, #3b3b3b, #292929, #181818, #000000, #000000, #000000, #000000, #000000);}
+
+header .artist .show img {
+    width: 170px;
+    height: 170px;
+    margin-top: 4%;
+    margin-left: 8%;
+    display: flex;
+}
+
+header .artist .show h5 {
+    font-size: 40px;
+    margin: 90px 0px 0px 20px;
+}
+
+header .artist .show h5 .subtitle {
+    font-size: 20px;
+    color: #000000;
+}
+
+header .artist .list{
+    width: 95%;
+    height: 45%;
+    justify-content: first baseline;
+    margin: 10px 0px 0px 10px;
+    overflow: auto;
+}
+
+header .artist .list li{
+    padding: 5px 0px 5px 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+header .artist .list li img{
+    height: 50px;
+    width: 50px;
+}
+
+header .artist .list li .bi{
+    position: absolute;
+    right: 15px;
+    color: #fff;
+    transition: transform .3s;
+}
+header .artist .list li .bi:hover{
+    transform: scale(1.5);
+}
+
+header .artist .list li .subtitle{
+    font-size: 10px;
+    color: #a4a8b4;
+}
+
+header .list::-webkit-scrollbar{
+    display: flex;
+}
+
+header .artist .show .playbotton {
+    width: fit-content;
+    height: fit-content;
+    margin-left: 40%;
+    margin-top: 10%;
+}
+
+header .artist .show .playbotton .bi {
+    font-size: 100px;
+    position: absolute;
+    right: auto;
+    transition: transform .3s;
+    box-shadow: #181818;
+}
+
+header .artist .show .playbotton .bi:hover {
+    transform: scale(1.1);
+    color: rgb(1, 1, 1);
+}
