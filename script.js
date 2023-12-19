@@ -2,8 +2,36 @@ const music = new Audio('dafa.mp3');
 music.play();
 
 const songs = [
-   
-    
+
+    {
+        id:'1',
+        songName:` Tu Hai Kahan <br><div class="subtitle">AUR</div>`,
+        poster: "img/1.jpg"
+    },
+    {
+        id:'2',
+        songName:` ON MY WAY <br>
+        <div class="subtitle">Alan Walker</div>`,
+        poster: "img/2.jpg"
+    },
+    {
+        id:'3',
+        songName:` Shiv Tandav <br>
+        <div class="subtitle">ananya basu</div>`,
+        poster: "img/3.jpg"
+    },
+    {
+        id:'4',
+        songName:` NeeleNeele Ambar <br>
+        <div class="subtitle">Kishore Kumar</div>`,
+        poster: "img/4.jpg"
+    },
+    {
+        id:'5',
+        songName:` Light Switch <br>
+        <div class="subtitle">charlie puth</div>`,
+        poster: "img/5.jpg"
+    },
     {
         id:'6',
         songName:` Kya Khoob <br>
@@ -17,7 +45,7 @@ const songs = [
         poster: "img/7.jpg"
     },
     {
-        id:'8',
+        id:'1',
         songName:` Dil Luteya <br>
         <div class="subtitle">Jazzy B</div>`,
         poster: "img/8.jpg"
@@ -46,36 +74,7 @@ const songs = [
         poster: "img/12.jpg"
     },
     {
-        id:'13',
-        songName:` Light Switch <br>
-        <div class="subtitle">charlie puth</div>`,
-        poster: "img/5.jpg"
-    },
-    {
-        id:'14',
-        songName:` Tu Hai Kahan <br><div class="subtitle">AUR</div>`,
-        poster: "img/1.jpg"
-    },
-    {
-        id:'15',
-        songName:` ON MY WAY <br>
-        <div class="subtitle">Alan Walker</div>`,
-        poster: "img/2.jpg"
-    },
-    {
-        id:'16',
-        songName:` Shiv Tandav <br>
-        <div class="subtitle">ananya basu</div>`,
-        poster: "img/3.jpg"
-    },
-    {
-        id:'17',
-        songName:` NeeleNeele Ambar <br>
-        <div class="subtitle">Kishore Kumar</div>`,
-        poster: "img/4.jpg"
-    },
-    {
-        id:'18',
+        id:'5',
         songName:` Light Switch <br>
         <div class="subtitle">charlie puth</div>`,
         poster: "img/5.jpg"
@@ -108,7 +107,7 @@ const songs = [
         songName:` Light Switch <br>
         <div class="subtitle">charlie puth</div>`,
         poster: "img/5.jpg"
-    },
+    }
     
     
 ]

@@ -411,13 +411,19 @@ header .master_play .user{
     width: 20%;
     height: 100%;
     display: flex;
-    cursor: pointer;
+    align-items: center;
 }
 
-header .master_play .user:hover{
-    background: rgb(184, 184, 184,.1);
-    transition: .2s linear;
+header .master_play .user i{
+    color: #fff;
+    transition: transform;
+    margin-left: 10%;
 }
+header .master_play .user i:hover{
+    color: #fff;
+    transform: scale(1.2);
+}
+
 
 header .master_play .user h5{
      font-size: 15px;
