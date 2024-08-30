@@ -1,0 +1,1 @@
+strt from getstarted.html
